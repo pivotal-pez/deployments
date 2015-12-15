@@ -15,3 +15,17 @@ applications:
         path: pezdispenser/production.yml
         push_cmd: cf push-zdd dispenser 
 
+  haas-broker:
+    deployments:
+      - name: develop
+        url: api.run.core.pez.pivotal.io --skip-ssl-validation
+        org: sys-pez
+        space: pez-dev 
+        path: haas-broker/development.yml
+        push_cmd: cf push-zdd haasbrokerdev 
+      - name: production
+        url: api.run.pez.pivotal.io --skip-ssl-validation
+        org: sys-pez
+        space: pez
+        path: haas-broker/production.yml
+        push_cmd: cf push-zdd haasbroker 
