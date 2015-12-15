@@ -29,3 +29,15 @@ applications:
         space: pez
         path: haas-broker/production.yml
         push_cmd: cf push-zdd haasbroker 
+      - name: develop-service
+        url: api.run.core.pez.pivotal.io --skip-ssl-validation
+        org: sys-pez
+        space: pez-brokers 
+        path: haas-broker/development.yml
+        push_cmd: cf update-service-broker pez-haas ${BASIC_AUTH_USER} ${BASIC_AUTH_PASS} ${BROKER_URL} && echo 
+      - name: production-service
+        url: api.run.pez.pivotal.io --skip-ssl-validation
+        org: sys-pez
+        space: pez
+        path: haas-broker/production.yml
+        push_cmd: cf update-service-broker pez-haas ${BASIC_AUTH_USER} ${BASIC_AUTH_PASS} ${BROKER_URL} && echo 
