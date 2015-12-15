@@ -2,6 +2,6 @@
 inherit: manifest.yml
 instances: 2
 hosts:
-- dispenserdev
+- haasbroker 
 domains:
 - cfapps.core.pez.pivotal.io  
