@@ -20,7 +20,7 @@ applications:
       - name: develop
         url: api.run.core.pez.pivotal.io --skip-ssl-validation
         org: sys-pez
-        space: pez-dev 
+        space: pez-brokers 
         path: haas-broker/development.yml
         push_cmd: cf push-zdd haasbrokerdev 
       - name: production
