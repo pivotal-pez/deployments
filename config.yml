@@ -34,10 +34,10 @@ applications:
         org: sys-pez
         space: pez-brokers 
         path: haas-broker/development.yml
-        push_cmd: cf update-service-broker pez-haas ${BASIC_AUTH_USER} ${BASIC_AUTH_PASS} ${BROKER_URL} && echo 
+        push_cmd: cf update-service-broker pez-haas ${BASIC_AUTH_USER} ${BASIC_AUTH_PASS} ${BROKER_URL}
       - name: production-service
         url: api.run.pez.pivotal.io --skip-ssl-validation
         org: sys-pez
         space: pez
         path: haas-broker/production.yml
-        push_cmd: cf update-service-broker pez-haas ${BASIC_AUTH_USER} ${BASIC_AUTH_PASS} ${BROKER_URL} && echo 
+        push_cmd: cf update-service-broker pez-haas ${BASIC_AUTH_USER} ${BASIC_AUTH_PASS} ${BROKER_URL} 
