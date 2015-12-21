@@ -4,4 +4,4 @@ instances: 4
 hosts:
 - haasbroker 
 domains:
-- cfapps.pez.pivotal.io  
+- pezapp.io  
