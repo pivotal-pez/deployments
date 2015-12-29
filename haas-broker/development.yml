@@ -5,3 +5,5 @@ hosts:
 - haasbroker 
 domains:
 - cfapps.core.pez.pivotal.io  
+env:
+  LOG_LEVEL: debug
