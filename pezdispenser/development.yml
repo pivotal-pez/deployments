@@ -5,3 +5,5 @@ hosts:
 - dispenserdev
 domains:
 - cfapps.core.pez.pivotal.io  
+env:
+  LOG_LEVEL: debug
